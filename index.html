@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #000;
+        }
+        canvas {
+            background-color: #fff;
+        }
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            background-color: #c8c8c8;
+            padding: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="status-bar">
+        <div id="score">Score: 0</div>
+        <div id="ops">Ops: 0</div>
+        <div id="time">Time: 02:00</div>
+    </div>
+    <canvas id="gameCanvas" width="600" height="380"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
